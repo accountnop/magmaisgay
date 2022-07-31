@@ -148,12 +148,13 @@ if game.CoreGui:FindFirstChild("Library") then
   MainTitle.Parent = LeftFrame
   MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
   MainTitle.BackgroundTransparency = 1.000
-  MainTitle.Position = UDim2.new(0.168, 0, 0.043, 0)
+  MainTitle.Position = UDim2.new(0.100, 0, 0.043, 0)
   MainTitle.Size = UDim2.new(0, 71, 0, 20)
-  MainTitle.Font = Enum.Font.Gotham 
+  MainTitle.Font = Enum.Font.GothamBold
   MainTitle.Text = text
   MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
   MainTitle.TextSize = 25.000
+  MainTitle.TextTransparency = 0.300
   MainTitle.TextXAlignment = Enum.TextXAlignment.Left
  
  
@@ -161,13 +162,13 @@ if game.CoreGui:FindFirstChild("Library") then
   GameTitle.Parent = LeftFrame
   GameTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
   GameTitle.BackgroundTransparency = 1.000
-  GameTitle.Position = UDim2.new(0.168, 0, 0.089, 6)
+  GameTitle.Position = UDim2.new(0.100, 0, 0.089, 6)
   GameTitle.Size = UDim2.new(0, 71, 0, 20)
-  GameTitle.Font = Enum.Font.Gotham
+  GameTitle.Font = Enum.Font.GothamSemibold
   GameTitle.Text = textgame
   GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-  GameTitle.TextSize = 17.000
-  GameTitle.TextTransparency = 0.400
+  GameTitle.TextSize = 14.000
+  GameTitle.TextTransparency = 0.500
   GameTitle.TextXAlignment = Enum.TextXAlignment.Left
  
   TabHolder.Name = "TabHolder"
@@ -266,7 +267,7 @@ if game.CoreGui:FindFirstChild("Library") then
      OkayBtnTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
      OkayBtnTitle.BackgroundTransparency = 1.000
      OkayBtnTitle.Size = UDim2.new(0, 200, 0, 42)
-     OkayBtnTitle.Text = "Okey"
+     OkayBtnTitle.Text = "Ok!"
      OkayBtnTitle.Font = Enum.Font.Gotham
      OkayBtnTitle.TextColor3 = Color3.fromRGB(202, 202, 202)
      OkayBtnTitle.TextSize = 24.000
@@ -278,10 +279,11 @@ if game.CoreGui:FindFirstChild("Library") then
      NotificationTitle.Position = UDim2.new(0.0559394211, 0, 0.0652336925, 0)
      NotificationTitle.Size = UDim2.new(0, 272, 0, 26)
      NotificationTitle.ZIndex = 3
-     NotificationTitle.Font = Enum.Font.Gotham
-     NotificationTitle.Text = "Notification"
+     NotificationTitle.Font = Enum.Font.GothamBold
+     NotificationTitle.Text = ""..text.." | Notification"
      NotificationTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
      NotificationTitle.TextSize = 24.000
+	   NotificationTitle.TextTransparency = 0.300
  
      NotificationDesc.Name = "NotificationDesc"
      NotificationDesc.Parent = NotificationFrame
@@ -289,10 +291,11 @@ if game.CoreGui:FindFirstChild("Library") then
      NotificationDesc.BackgroundTransparency = 1.000
      NotificationDesc.Position = UDim2.new(0.0670000017, 0, 0.218999997, 0)
      NotificationDesc.Size = UDim2.new(0, 274, 0, 146)
-     NotificationDesc.Font = Enum.Font.Gotham
+     NotificationDesc.Font = Enum.Font.GothamSemibold
      NotificationDesc.Text = textdesc
      NotificationDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
      NotificationDesc.TextSize = 20.000
+	 NotificationDesc.TextTransparency = 0.500
      NotificationDesc.TextWrapped = true
      NotificationDesc.TextXAlignment = Enum.TextXAlignment.Center
      NotificationDesc.TextYAlignment = Enum.TextYAlignment.Top
@@ -353,7 +356,7 @@ if game.CoreGui:FindFirstChild("Library") then
      Tab.TextSize = 15.000
      Tab.BackgroundTransparency = 1
  
-     UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+     UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
      UIGradient.Parent = Tab
  
  
@@ -367,10 +370,11 @@ if game.CoreGui:FindFirstChild("Library") then
      Title.BackgroundTransparency = 1.000
      Title.Position = UDim2.new(0.0566037744, 0, 0.1, 0)
      Title.Size = UDim2.new(0, 150, 0, 29)
-     Title.Font = Enum.Font.Gotham
+     Title.Font = Enum.Font.GothamSemibold
      Title.Text = text
      Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-     Title.TextSize = 17.000
+     Title.TextSize = 18.000
+	 Title.TextTransparency = 0.300
      Title.TextXAlignment = Enum.TextXAlignment.Left
  
      local Container = Instance.new("ScrollingFrame")
@@ -434,9 +438,10 @@ if game.CoreGui:FindFirstChild("Library") then
         Button.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
         Button.Size = UDim2.new(0, 405, 0, 40)
         Button.AutoButtonColor = false
-        Button.Font = Enum.Font.Gotham
+        Button.Font = Enum.Font.GothamSemibold
         Button.TextColor3 = Color3.fromRGB(255, 255, 255)
         Button.TextSize = 15.000
+			Button.TextTransparency = 0.300
         Button.Text = text
  
         ButtonCorner.CornerRadius = UDim.new(0, 5)
@@ -508,10 +513,11 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 430, 0, 40)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.GothamSemibold
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
+		Title.TextTransparency = 0.300
         Title.TextXAlignment = Enum.TextXAlignment.Left
  
         ToggleFrame.Name = "ToggleFrame"
@@ -541,7 +547,7 @@ if game.CoreGui:FindFirstChild("Library") then
         ToggleDot.Position = UDim2.new(0.104999997, -3, 0.289000005, -4)
         ToggleDot.Size = UDim2.new(0, 16, 0, 16)
  
-        UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+        UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
         UIGradient_2.Parent = ToggleDot
  
         ToggleDotCorner.CornerRadius = UDim.new(1, 0)
@@ -569,7 +575,7 @@ if game.CoreGui:FindFirstChild("Library") then
         )
  
         if Toggled == true then
-         UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+         UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
  
          TweenService:Create(
             ToggleFrameRainbow,
@@ -583,7 +589,7 @@ if game.CoreGui:FindFirstChild("Library") then
          ):Play()
          pcall(callback, Toggled)
       else
-         ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(46, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(228, 92, 255))}
+         ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(228, 92, 255))}
  
          TweenService:Create(
             ToggleFrameRainbow,
@@ -600,7 +606,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Toggle.MouseButton1Click:Connect(
            function()
               if Toggled == false then
-                 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+                 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
  
                  TweenService:Create(
                     ToggleFrameRainbow,
@@ -613,7 +619,7 @@ if game.CoreGui:FindFirstChild("Library") then
                     {Position = UDim2.new(0.595, -3, 0.289000005, -4)}
                  ):Play()
               else
-                 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+                 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
  
                  TweenService:Create(
                     ToggleFrameRainbow,
@@ -662,10 +668,11 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 192, 0, 28)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.GothamSemibold
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 14.000
+			 Title.TextTransparency = 0.300
         Title.TextXAlignment = Enum.TextXAlignment.Left
  
         SliderFrame.Name = "SliderFrame"
@@ -684,7 +691,7 @@ if game.CoreGui:FindFirstChild("Library") then
         SliderIndicator.Position = UDim2.new(-0.00260408712, 0, 0.0363603085, 0)
         SliderIndicator.Size = UDim2.new((start or 0) / max, 0, 0, 11)
  
-        UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(160, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
+        UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 207, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(102, 152, 255))}
         UIGradient_3.Parent = SliderIndicator
  
         SliderIndicatorCorner.Name = "SliderIndicatorCorner"
@@ -704,6 +711,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Value.Text = tostring(start and math.floor((start / max) * (max - min) + min) or 0)
         Value.TextColor3 = Color3.fromRGB(255, 255, 255)
         Value.TextSize = 14.000
+		Value.TextTransparency = 0.300
         Value.TextXAlignment = Enum.TextXAlignment.Right
  
         local function slide(input)
@@ -776,10 +784,11 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 192, 0, 40)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.GothamSemibold
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
+			 Title.TextTransparency = 0.300
         Title.TextXAlignment = Enum.TextXAlignment.Left
  
         DropdownCorner.CornerRadius = UDim.new(0, 6)
@@ -931,9 +940,10 @@ if game.CoreGui:FindFirstChild("Library") then
            Item.Position = UDim2.new(0, 0, 0.0808080807, 0)
            Item.Size = UDim2.new(0, 405, 0, 24)
            Item.AutoButtonColor = false
-           Item.Font = Enum.Font.Gotham
+           Item.Font = Enum.Font.GothamBold
            Item.TextColor3 = Color3.fromRGB(255, 255, 255)
            Item.TextSize = 14.000
+		   	 Item.TextTransparency = 0.200
            Item.Text = v
  
            ItemCorner.Name = "ItemCorner"
@@ -960,7 +970,7 @@ if game.CoreGui:FindFirstChild("Library") then
  
            Item.MouseButton1Click:Connect(
               function()
-                 Title.Text = text .. " - " .. v
+                 Title.Text = text .. " | " .. v
                  pcall(callback, v)
                  DropToggled = false
                  DropdownFrame:TweenSize(
@@ -1050,9 +1060,10 @@ if game.CoreGui:FindFirstChild("Library") then
            Item.Position = UDim2.new(0, 0, 0.0808080807, 0)
            Item.Size = UDim2.new(0, 405, 0, 24)
            Item.AutoButtonColor = false
-           Item.Font = Enum.Font.Gotham
+           Item.Font = Enum.Font.GothamBold
            Item.TextColor3 = Color3.fromRGB(255, 255, 255)
            Item.TextSize = 14.000
+		   	 Item.TextTransparency = 0.200
            Item.Text = toadd
  
            ItemCorner.Name = "ItemCorner"
@@ -1079,7 +1090,7 @@ if game.CoreGui:FindFirstChild("Library") then
  
            Item.MouseButton1Click:Connect(
               function()
-                 Title.Text = text .. " - " .. toadd
+                 Title.Text = text .. " | " .. toadd
                  pcall(callback, toadd)
                  DropToggled = false
                  DropdownFrame:TweenSize(
@@ -1149,10 +1160,11 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 405, 0, 40)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.GothamSemibold
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
+			 Title.TextTransparency = 0.300
         Title.TextXAlignment = Enum.TextXAlignment.Left
  
         BoxColor.Name = "Boxcolor"
@@ -1264,9 +1276,10 @@ if game.CoreGui:FindFirstChild("Library") then
         Confirm.Position = UDim2.new(0.612244904, 0, 0.0900000036, 0)
         Confirm.Size = UDim2.new(0, 145, 0, 27)
         Confirm.AutoButtonColor = false
-        Confirm.Font = Enum.Font.Gotham
+        Confirm.Font = Enum.Font.GothamSemibold
         Confirm.Text = "Confirm"
         Confirm.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Confirm.TextTransparency = 0.200
         Confirm.TextSize = 14.000
  
         ButtonCorner.Name = "ButtonCorner"
@@ -1292,10 +1305,11 @@ if game.CoreGui:FindFirstChild("Library") then
         RainbowTitle.BackgroundTransparency = 1.000
         RainbowTitle.Position = UDim2.new(0.0204080511, 0, 0, 0)
         RainbowTitle.Size = UDim2.new(0, 29, 0, 27)
-        RainbowTitle.Font = Enum.Font.Gotham
+        RainbowTitle.Font = Enum.Font.GothamBold
         RainbowTitle.Text = "Rainbow"
         RainbowTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
         RainbowTitle.TextSize = 14.000
+		 RainbowTitle.TextTransparency = 0.300
         RainbowTitle.TextXAlignment = Enum.TextXAlignment.Left
  
         RainbowToggleFrame.Name = "RainbowToggleFrame"
@@ -1584,9 +1598,10 @@ if game.CoreGui:FindFirstChild("Library") then
         Label.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
         Label.Size = UDim2.new(0, 405, 0, 40)
         Label.AutoButtonColor = false
-        Label.Font = Enum.Font.Gotham
+        Label.Font = Enum.Font.GothamSemibold
         Label.TextColor3 = Color3.fromRGB(255, 255, 255)
         Label.TextSize = 17.000
+			 Label.TextTransparency = 0.300
         Label.Text = text
  
         LabelCorner.CornerRadius = UDim.new(0, 5)
@@ -1663,6 +1678,7 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.Text = "Keybind"
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
+		Title.TextTransparency = 0.300
         Title.TextXAlignment = Enum.TextXAlignment.Left
  
         KeybindFrame.Name = "KeybindFrame"
@@ -1780,10 +1796,11 @@ if game.CoreGui:FindFirstChild("Library") then
         Title.BackgroundTransparency = 1.000
         Title.Position = UDim2.new(0.0198511165, 0, 0, 0)
         Title.Size = UDim2.new(0, 405, 0, 40)
-        Title.Font = Enum.Font.Gotham
+        Title.Font = Enum.Font.GothamSemibold
         Title.Text = text
         Title.TextColor3 = Color3.fromRGB(255, 255, 255)
         Title.TextSize = 15.000
+			 Title.TextTransparency = 0.300
         Title.TextXAlignment = Enum.TextXAlignment.Left
  
         TextboxFrame.Name = "TextboxFrame"
@@ -1800,10 +1817,11 @@ if game.CoreGui:FindFirstChild("Library") then
         TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         TextBox.BackgroundTransparency = 1.000
         TextBox.Size = UDim2.new(0, 134, 0, 19)
-        TextBox.Font = Enum.Font.Gotham
+        TextBox.Font = Enum.Font.GothamBold
         TextBox.Text = ""
         TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
         TextBox.TextSize = 15.000
+			 TextBox.TextTransparency = 0.300
  
         TextboxCorner.CornerRadius = UDim.new(0, 6)
         TextboxCorner.Name = "TextboxCorner"
@@ -1828,7 +1846,7 @@ if game.CoreGui:FindFirstChild("Library") then
   end
   return Tabs
  end
-local win = VLib:Window("MagmaHub V2", "Blox Fruit", Color3.fromRGB(252, 83, 83))
+local win = VLib:Window("Nub Hub", "[🔥 🔵 UPDATE] Blox Fruits", Color3.fromRGB(252, 83, 83))
        local AutoFram = win:Tab("Auto Farm")
        OldWorld = false
        newworld = false
@@ -2485,7 +2503,7 @@ local win = VLib:Window("MagmaHub V2", "Blox Fruit", Color3.fromRGB(252, 83, 83)
           end
        end)
        
-       AutoFram:Toggle("Auto Buy Enhancement (Use 1500 Fragments)",false,function(Value)
+       AutoFram:Toggle("Auto Buy Haki Color (Use 1500 Fragments)",false,function(Value)
          Enhancement = Value    
       end)
       spawn(function()
@@ -2528,45 +2546,9 @@ local win = VLib:Window("MagmaHub V2", "Blox Fruit", Color3.fromRGB(252, 83, 83)
               end
            end
         end)
+
         AutoFram:line()
-        WaponMastery = {}
-        for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do  
-           if v:IsA("Tool") then
-              table.insert(WaponMastery ,v.Name)
-           end
-        end
-        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do  
-           if v:IsA("Tool") then
-              table.insert(WaponMastery , v.Name)
-           end
-        end
-        local SelectWeaponDevil = AutoFram:Dropdown("Select Weapon (Weapon Attact Mon)",WaponMastery,function(Value)
-           SelectToolWeaponDevil = Value
-           SelectToolWeaponDevilOld = Value
-        end)
-        AutoFram:Button("Refresh Weapon",function()
-           SelectWeaponDevil:Clear()
-           Wapon = {}
-           for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do  
-              if v:IsA("Tool") then
-                 SelectWeaponDevil:Add(v.Name)
-              end
-           end
-           for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do  
-              if v:IsA("Tool") then
-                 SelectWeaponDevil:Add(v.Name)
-              end
-           end
-        end)
-        AutoFram:Toggle("Auto Fram Mastery Devil Fruit",false,function(v)
-           VLib:Notification("Next Update")
-        end)
-        HealthPersen = 10
-        AutoFram:Slider("Health %",1000,10000,2000,function(v)
-           HealthPersen = v
-        end)
-        AutoFram:line()
-        AutoFram:Label("Boss Fram", true)
+        AutoFram:Label("Boss Farm", true)
         function CheckQuestBoss()
            if SelectBoss == "Diamond [Lv. 750] [Boss]" then
               MsBoss = "Diamond [Lv. 750] [Boss]"
@@ -3020,10 +3002,22 @@ else
 	_G.FastAtttk = false
 end
 	    AutoFram:Toggle("Fast Attack",false,function(vu)
-          _G.FastAtttk = vu
+         
+local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+local Camera = require(game.ReplicatedStorage.Util.CameraShaker)
+Camera:Stop()
+coroutine.wrap(function()
+    game:GetService("RunService").Stepped:Connect(function()
+        if getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack then
+            getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack = 0
+            getupvalues(CombatFramework)[2]['activeController'].hitboxMagnitude = 25
+            getupvalues(CombatFramework)[2]['activeController']:attack()
+        end
+    end)
+end)()
        end)
 
-	     AutoFram:Slider("Tp Speed",100,800,300,function(v)
+	     AutoFram:Slider("Tween Speed",100,800,300,function(v)
           getgenv().speed = v
         end)
 
@@ -3332,6 +3326,9 @@ end)
           CheckQuest()
           wait(0.25)
           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrameQuest
+       end)
+	         Teleport:Button("Stop Tween",function()
+          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
        end)
        if newworld then
           Teleport:Button("Teleport To Old World",function()
@@ -4535,3 +4532,4 @@ end)
      Setting:Button("Destroy Gui",function()
         Library:Destroy()
      end)
+
